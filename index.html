@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+        <div class="logo">
+            <div class="logo-icon">NS</div>
+            <span id="logo-text">NeoSupport</span>
+        </div>
+        <div class="header-controls">
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <select class="language-select" id="language-select">
+                <option value="en">English</option>
+                <option value="hi">हिंदी</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="chat-container" id="chat-container">
+        <div class="message bot-message" id="welcome-message">
+            Hi there! How can I help you today?
+        </div>
+        <!-- Messages will be dynamically added here -->
+    </div>
+</div>
+    <div class="input-container">
+        <input type="text" class="message-input" id="message-input" placeholder="Type your message..." aria-label="Type your message">
+        <div class="action-buttons">
+            <button class="new-chat-button" id="new-chat-button">
+                <span class="button-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </span>
+                <span id="new-chat-text">New Chat</span>
+            </button>
+            <button class="send-button" id="send-button">Send</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span id="footer-text">© 2025 Neo Support  <a href="#" id="help-link">Help</a></span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
